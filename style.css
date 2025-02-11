@@ -400,6 +400,23 @@ footer {
     opacity: 1;
     transform: translateY(30px);
 }
+@media screen and (max-width: 480px) {
+    .textArea1{
+        margin: 0 !important;
+    }
+    .service {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .service h3,
+    .service p,
+    .service button {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
 
 .service:hover, .activity:hover {
     background-color: #dcf0f5;
