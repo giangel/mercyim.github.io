@@ -3,6 +3,14 @@
     padding-bottom: 40px;
 }
 
+@media (max-width: 600px) { 
+    .volunteer-section{
+     padding-left: 20px;
+     padding-right: 20px;
+    }
+   
+ }
+
 .call-to-action p {
     color: #dc3545;
     font-weight: 1000;
