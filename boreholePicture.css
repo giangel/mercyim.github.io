@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .boreholeText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .boreholeText .borehole-subhead {
+        margin-bottom: 10px;
+    }
+
+    .firstImage {
+        max-width: 500px;
+    }
+}
+
+p {
+    font-weight: bolder;
+}
+
+.container2 {
+    background-image: url(images/backg.png);
+    position: relative;
+}
+
+.container2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.borehole-subhead {
+    font-size: 20px;
+    color: #161992;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+/* Slick Carousel Styling */
+.slick-slide img {
+    width: 500px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    
+}
+@media (max-width: 767px) {
+    .slick-slide img {
+        max-width: 300px; /* Adjustable width for small screens, like mobile devices */
+        margin: 0 auto; /* Centers the image if it doesn't fill the width of the container */
+    }
+}
+
+.slick-slide {
+    padding: 0 10px;
+}
+
+.slick-list {
+    margin: 0 auto;
+}
+
+.custom-slick-prev, .custom-slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(245, 10, 10);
+    border: none;
+    font-size: 30px;
+    margin-left: -40px;
+    margin-right: -40px;
+    cursor: pointer;
+    z-index: 1001;
+    width: 20px;
+}
+
+.custom-slick-prev {
+    left: 10px;
+}
+
+.custom-slick-next {
+    right: 10px;
+}
+
+.center {
+    margin-top: 40px;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: none;
+}
+
+.slick-active .dot, .dot:hover {
+    background-color: #717171;
+}

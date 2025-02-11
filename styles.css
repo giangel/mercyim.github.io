@@ -1,0 +1,115 @@
+
+
+body {
+    /* background-color: green; */
+    /* opacity: 0.4; /* the smaller the more effective*/
+    background-image: url("https://st5.depositphotos.com/35914836/63482/i/950/depositphotos_634821438-stock-photo-beautiful-sunset-sea.jpg");
+    /*background-position:top; */
+
+
+}
+
+h1 {
+    /*background-color: beige; */
+    
+}
+
+#hello {
+    background-color: brown;
+    margin-left: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    padding-top: 40px;
+    
+
+}
+
+.heading {
+    color: blue;
+   /* background-color: brown;*/
+   margin-left: 50%;
+   border-style: dotted;
+   border-color: chartreuse;
+   outline-style: solid;
+   outline-offset: 20px;
+   text-align: justify;
+   text-decoration-line: line-through;
+   text-decoration-line: overline;
+   text-indent: 30px;
+
+}
+
+* {
+    color: black;
+}
+
+#someText{
+    color: azure;
+    text-align: center;
+    text-decoration-line: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+table, th, td{
+    border: 2px solid;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th{
+    height: 20px;
+    text-align: start;
+}
+
+td{
+    text-align: center;
+}
+
+tr:hover{
+    background-color: yellow;
+}
+
+.dropdownButton{
+    background-color: blue;
+    color: white;
+    padding: 13px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.dropdown {
+    display: inline;
+    position: relative;
+}
+
+.dropdownMenu{
+   position: absolute;
+   background-color: lightblue;
+   display: none;
+   min-width: 150px;
+}
+
+.dropdownMenu a {
+    padding: 11px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownMenu a:hover{
+    background-color: white;
+}
+
+.dropdown:hover .dropdownMenu{
+    display: block;
+}
+
+.dropdown:hover .dropdownButton {
+    background-color: blueviolet;
+}
+

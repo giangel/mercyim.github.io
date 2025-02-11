@@ -1,0 +1,282 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.shadow-container {
+    margin-top: 50px;
+    padding: 40px;
+    box-shadow: inset 0 20px 10px -5px rgba(0, 0, 0, 0.16); /* Shadow only at the top */
+    background-color: hsl(0, 0%, 100%); /* Optional for contrast */
+    border-radius: 10px 10px 0 0; /* Rounded corners only at top */
+}
+
+.text-primary{
+    color: red !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+.text-info {
+    color: #161992 !important;
+    font-weight: 700 !important;
+    font-size: 32px !important;
+    
+}
+
+.about-image {
+    width: 150px;
+    margin-right: 20px; /* Add some space between image and text */
+}
+
+.about-sign {
+    align-items: center; /* Vertically center the items in the row */
+}
+
+.shadow-container {
+    position: relative; /* This makes .shadow-container the positioning context */
+    margin-top: 50px;
+    padding: 40px;
+    box-shadow: inset 0 20px 10px -5px rgba(0, 0, 0, 0.16);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px 10px 0 0;
+}
+
+@media (min-width: 992px) { /* For large screens */
+    .about-sign {
+        position: absolute; 
+        bottom: 20px; 
+        max-width: 50%; 
+        padding: 10px; 
+        margin-top: 80px !important;
+      
+    }
+     /* Add some padding to the bottom of the content above .about-sign */
+     .shadow-container > .row {
+        padding-bottom: 100px; /* Adjust this value based on the height of .about-sign */
+    }
+    .about-image {
+        max-width: 120px !important;
+        margin-right: 50px;
+        
+        
+    }
+    .some-text {
+        margin-left: 40px;
+    }
+}
+.mission-section {
+    background-color: #1a1a2e !important;
+    margin-top: 50px;
+}
+
+.mission-section .display-4 {
+    font-size: 2.5rem;
+}
+
+.mission-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.mission-section .text-danger {
+    color: #ff4d4d;
+}
+
+.mission-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .mission-section .row {
+        flex-direction: column;
+    }
+    .mission-images, .mission-text {
+        width: 100% !important;
+        text-align: center;
+    }
+    .mission-images img {
+        margin-bottom: 1rem; /* Add space between images when stacked */
+    }
+}
+
+
+.flip-card-container {
+    perspective: 1000px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 30px;
+}
+
+.flip-card {
+    background-color: transparent;
+    height: 300px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+.icon-space {
+    margin-bottom: 10px; /* Adjust this value to control the space between icon and title */
+    color: #ff4d4d;
+}
+
+.flip-card-front {
+    background-color: #f5f5f5;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-back {
+    background-color: #0a1a2a;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-icon {
+    font-size: 30px;
+    margin-bottom: 1rem;
+    color: red;
+}
+
+.flip-card-title {
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #161992;
+    font-weight: 600;
+}
+
+.flip-card-description {
+    font-size: 16px;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.flip-card-button {
+    margin-top: 1rem;
+}
+
+@media (max-width: 767.98px) {
+    .flip-card-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Slick Carousel Styling */
+.slick-slide img {
+    width: 500px;
+    height: 200px;
+}
+
+@media (max-width: 767px) {
+    .slick-slide img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+.slick-slide {
+    padding: 0;
+}
+
+.slick-list {
+    margin: 0;
+}
+
+.custom-slick-prev, .custom-slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(245, 10, 10);
+    border: none;
+    font-size: 30px;
+    margin-left: -40px;
+    margin-right: -40px;
+    cursor: pointer;
+    z-index: 1001;
+    width: 20px;
+}
+
+.custom-slick-prev {
+    left: 10px;
+}
+
+.custom-slick-next {
+    right: 10px;
+}
+
+.center {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: none;
+}
+
+.slick-active .dot, .dot:hover {
+    background-color: #717171;
+}
