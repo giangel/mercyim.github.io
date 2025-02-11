@@ -401,12 +401,7 @@ footer {
     transform: translateY(30px);
 }
 
-@media (max-width: 600px) { 
-   .service{
-    padding: 0;
-   }
-  
-}
+
 .service:hover, .activity:hover {
     background-color: #dcf0f5;
     color: #000000;
