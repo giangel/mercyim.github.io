@@ -44,15 +44,17 @@
     margin-bottom: 30px;
     padding-bottom: 20px;
 }
+
 .impact {
     color: #2d8ab2 !important;
     font-weight: 900;
 }
-.impact-subhead{
+
+.impact-subhead {
     color: red;
 }
 
-.generocity-section{
+.generocity-section {
     background-image: url(images/backg.png);
     background-color: #cdeaf7;
     font-family: Arial, sans-serif;
@@ -67,14 +69,15 @@
     padding-left: 40px;
     padding-right: 40px;
 }
+
 .impact-image-container img {
     max-width: 100%;
     border-radius: 15px;
     padding-left: 30px;
-    
+
 }
 
-.impact-image{
+.impact-image {
     width: 700px;
     padding: 30px;
     height: auto;
@@ -91,4 +94,11 @@
         margin-top: 20px;
         /* Add margin above text when stacked */
     }
+
+    .volunteer-section {
+        padding-left: 20px;
+        padding-right: 24px;
+    }
+
+
 }
