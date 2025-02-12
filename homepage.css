@@ -33,6 +33,24 @@
     background-color: #c82333;
 }
 
+@media (max-width: 768px) {
+    .call-to-action .form-group {
+        flex-direction: column; /* Stack inputs vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .call-to-action .form-group input {
+        margin-bottom: 10px; /* Add space between inputs */
+        width: 100%; /* Full width for better touch interaction */
+        max-width: 200px; /* Limit width for consistency */
+    }
+
+    .call-to-action .btn {
+        width: 100%; /* Full width button */
+        max-width: 200px; /* Match form control width */
+    }
+}
+
 .impact-section {
     background-color: #EAF3F7;
     color: black;
