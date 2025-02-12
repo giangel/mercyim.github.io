@@ -30,7 +30,10 @@
 }
 
 .call-to-action .btn:hover {
-    background-color: #c82333;
+    background-color: white;
+    color: #c82333;
+    border-style: solid;
+    border-color: #c82333;    
 }
 
 
