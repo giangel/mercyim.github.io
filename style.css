@@ -505,6 +505,10 @@ h3 {
     padding-bottom: 90px;
 }
 
+.reduced-padding {
+    padding-top: 0.5rem; /* Adjust this value as needed */
+}
+
 .rounded-lg {
     border: none;
     border-radius: 15px;
