@@ -282,14 +282,6 @@ footer {
     line-height: 1;
 }
 
-.serviceHead {
-    color: #ff0000;
-}
-.service-subhead {
-    color: #2d8ab2;
-    font-weight: bolder;
-}
-
 #counterSection .counters {
     width: 100%;
     display: flex;
@@ -389,6 +381,15 @@ footer {
 
 .subHeading {
     color: red !important;
+    font-weight: bolder;
+}
+
+.serviceHead {
+    color: #ff0000;
+    
+}
+.service-subhead {
+    color: #2d8ab2;
     font-weight: bolder;
 }
 
