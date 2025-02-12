@@ -1,0 +1,71 @@
+/* morgue.css */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center; /* Center the columns horizontally */
+}
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Add gap between images */
+}
+.img1 {
+    width: 100%; /* Make images responsive within their column */
+    display: block; /* Prevent small space below images */
+}
+
+
+.column .img1 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.text-center .btn {
+    margin: 5px;
+}
+
+/* Center the content vertically and horizontally */
+main {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+.morgueHeader{
+    color: red;
+    font-weight: 800;
+    margin: 30px;
+}
+/* Optional: Add some margin to the top and bottom of the main content */
+main {
+    padding: 20px 0; /* Adjust as needed */
+}
+
+.container {
+    max-width: 90%; /* Adjust as needed */
+}
+
+/* Media query for smaller screens - stack columns */
+@media (max-width: 768px) {
+    .column {
+        flex: 100%; /* Full width on smaller screens */
+        padding: 40px 40px; /* Reduce padding on smaller screens */
+    }
+}
+
+/* Media query for larger screens - reduce image size */
+@media (min-width: 992px) { /* Adjust breakpoint as needed */
+    .column {
+        flex: 25%; /* Four columns on large screens */
+    }
+    .column .img1 {
+        max-width: 500px; /* Set a maximum width for images */
+        
+        margin: 10px auto; /* Center images within the column */
+    }
+}
+
+.footer-logo{
+    max-width: 30%;
+    vertical-align: middle;
+}
