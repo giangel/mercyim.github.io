@@ -33,21 +33,37 @@
     background-color: #c82333;
 }
 
+.mobile-hidden {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
 @media (max-width: 768px) {
+    .mobile-hidden {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
     .call-to-action .form-group {
-        flex-direction: column; /* Stack inputs vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column;
+        align-items: center;
     }
 
     .call-to-action .form-group input {
-        margin-bottom: 10px; /* Add space between inputs */
-        width: 100%; /* Full width for better touch interaction */
-        max-width: 200px; /* Limit width for consistency */
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 200px;
     }
 
     .call-to-action .btn {
-        width: 100%; /* Full width button */
-        max-width: 200px; /* Match form control width */
+        width: 100%;
+        max-width: 200px;
     }
 }
 
