@@ -280,3 +280,7 @@ p {
 .slick-active .dot, .dot:hover {
     background-color: #717171;
 }
+
+.counterSec {
+    padding: 40px;
+}
