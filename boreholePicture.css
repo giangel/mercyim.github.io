@@ -58,6 +58,9 @@ p {
         max-width: 300px; /* Adjustable width for small screens, like mobile devices */
         margin: 0 auto; /* Centers the image if it doesn't fill the width of the container */
     }
+    .container2 {
+        padding: 10px;
+    }
 }
 
 .slick-slide {
