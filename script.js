@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function submitVolunteer() {
-    const fullName = document.getElementById('fullName').value;
+   /* const fullName = document.getElementById('fullName').value;
     const phoneNumber = document.getElementById('phoneNumber').value;
     
     if (fullName && phoneNumber) {
@@ -169,4 +169,13 @@ function submitVolunteer() {
     } else {
         alert('Please fill in all fields.');
     }
+        */
+
+    // Construct the mailto link
+    let mailtoLink = "mailto:giangel@gmail.com" +
+                     "?subject=Volunteer Application" +
+                     "&body=Please enter your full name and phone number below%0A%0AName:%0APhone Number:";
+
+    // Open the default email client with the pre-filled information
+    window.location.href = mailtoLink;
 }
