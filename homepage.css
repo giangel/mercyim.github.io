@@ -1,6 +1,6 @@
 .volunteer-section {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .call-to-action p {
@@ -35,8 +35,6 @@
     border-style: solid;
     border-color: #c82333;    
 }
-
-
 
 @media (max-width: 768px) {
 
