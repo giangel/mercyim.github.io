@@ -19,8 +19,12 @@ p {
     border-radius: 10px 10px 0 0; /* Rounded corners only at top */
 }
 
+.text-primary1{
+    color: #0d6efd !important;
+}
+
 .text-primary{
-    color: red ;
+    color: red !important;
     font-size: 20px;
     font-weight: bold;
 }
