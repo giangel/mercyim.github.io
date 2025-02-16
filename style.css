@@ -44,7 +44,7 @@ p {
     animation-name: fadeInLeft;
     animation-duration: 2s;
 }
-header {
+.head1 {
     position: sticky;
     top: 0;
 }
