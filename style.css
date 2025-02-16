@@ -44,10 +44,6 @@ p {
     animation-name: fadeInLeft;
     animation-duration: 2s;
 }
-.head1 {
-    position: sticky;
-    top: 0;
-}
 
 @keyframes fadeInLeft {
     from {
@@ -147,6 +143,12 @@ p {
     margin: 0;
     line-height: 1.2;
     animation: fadeIn 2s ease-out;
+}
+header.navbar {
+    position: sticky; /* This is the key */
+    top: 0;         /* Stick to the top */
+    z-index: 100;    /* Ensure it's above other content */
+    /* Add any other header-specific styles here */
 }
 
 @keyframes fadeIn {
