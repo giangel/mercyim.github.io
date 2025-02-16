@@ -44,6 +44,10 @@ p {
     animation-name: fadeInLeft;
     animation-duration: 2s;
 }
+.navbar {
+    position: sticky;
+    top: 0;
+}
 
 @keyframes fadeInLeft {
     from {
