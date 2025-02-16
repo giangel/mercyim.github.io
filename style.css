@@ -154,7 +154,7 @@ header.navbar {
 }
 
 header.navbar .navbar-collapse.show {
-    position: static;
+    position: sticky;
 }
 
 .navbar-collapse {
