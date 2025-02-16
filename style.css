@@ -144,23 +144,6 @@ p {
     line-height: 1.2;
     animation: fadeIn 2s ease-out;
 }
-  
-/* Adjustments for navbar behavior */
-header.navbar {
-    position: sticky; /* This is the key */
-    top: 0;         /* Stick to the top */
-    z-index: 100;    /* Ensure it's above other content */
-    /* Add any other header-specific styles here */
-}
-
-header.navbar .navbar-collapse.show {
-    position: sticky;
-}
-
-.navbar-collapse {
-    max-height: none;
-}
-
 
 @keyframes fadeIn {
     0% {
@@ -475,6 +458,20 @@ footer {
     font-size: 3em; /* Increase size for visibility */
     font-weight: bold; /* Bold for emphasis */
 }
+
+/* Adjustments for navbar behavior */
+header.navbar {
+    position: static;  
+}
+
+header.navbar .navbar-collapse.show {
+    position: static;
+}
+
+.navbar-collapse {
+    max-height: none;
+}
+
 
 h3 {
     color: #6e409b;
