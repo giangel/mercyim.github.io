@@ -213,6 +213,10 @@ footer {
     width: 100%;
     margin-bottom: 0; /* Pushes footer to the bottom of the page content */
 }
+.logo-sized {
+    width: 100px;
+    height: 70px;
+}
 
 /* For screens smaller than lg, ensure footer behaves naturally */
 @media (max-width: 991.98px) {
