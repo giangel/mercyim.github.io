@@ -44,7 +44,7 @@ p {
     animation-name: fadeInLeft;
     animation-duration: 2s;
 }
-.navbar {
+header {
     position: sticky;
     top: 0;
 }
