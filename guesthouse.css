@@ -416,3 +416,41 @@ header {
 .left-section {
     text-align: center; /* For the Family Suite section */
 }
+
+footer {
+    background-color: #222;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 20px 0;
+    width: 100%;
+    margin-bottom: 0; /* Pushes footer to the bottom of the page content */
+}
+.logo-sized {
+    width: 100px;
+    height: 70px;
+}
+
+/* For screens smaller than lg, ensure footer behaves naturally */
+@media (max-width: 991.98px) {
+    footer.fixed-lg-bottom {
+      position: static;
+    }
+}
+
+/* For lg screens and up, fix to bottom */
+@media (min-width: 992px) {
+    footer.fixed-lg-bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+    }
+    
+    /* Ensure body does not scroll under the fixed footer */
+    body {
+        padding-bottom: 60px; /* Adjust based on your footer height */
+        margin-bottom: 0; /* Remove any default margin */
+        
+    }
+}
