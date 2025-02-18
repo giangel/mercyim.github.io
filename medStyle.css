@@ -26,9 +26,12 @@ h1 {
 
 @media (max-width: 767px) {
     .content{
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
    }
+   .container2 {
+    padding: 20px;
+}
 }
 
 .list-group-item {
