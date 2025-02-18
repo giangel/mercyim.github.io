@@ -45,12 +45,7 @@ h1 {
     text-align: justify;
 }
 
-@media (min-width: 992px) { /* For large screens */
-    .center {
-        flex-wrap: wrap; /* Allow wrapping to new rows */
-        justify-content: center; /* Center the cards */
-    }
-}
+
 
 .medSubheader{
     color: #161992;
