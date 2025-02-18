@@ -124,15 +124,18 @@ p {
 .flip-card-container {
     perspective: 1000px;
     margin-bottom: 20px;
-    width: 100%;
+    width: 100%; /* Occupy full width by default */
     padding: 10px;
     box-sizing: border-box;
-    margin: 30px;
+    display: flex; /* Enable flexbox for positioning */
+    justify-content: center; /* Center the cards horizontally */
 }
 
 .flip-card {
     background-color: transparent;
     height: 300px;
+    width: 45%; /* Adjust width for two cards per row on larger screens */
+    margin: 10px; /* Add some margin between cards */
 }
 
 .flip-card-inner {
@@ -206,7 +209,23 @@ p {
 .flip-card-button {
     margin-top: 1rem;
 }
+@media (min-width: 992px) { /* For large screens */
+    .center {
+        flex-wrap: wrap; /* Allow wrapping to new rows */
+        justify-content: center; /* Center the cards */
+    }
 
+    .flip-card {
+        width: 45%; /* Two cards per row with some margin */
+    }
+}
+
+@media (max-width: 767.98px) { /* For small screens */
+    .flip-card {
+        width: 90%; /* One card per row */
+        margin: 10px auto; /* Center the card */
+    }
+}
 @media (max-width: 767.98px) {
     .flip-card-container {
         width: 100%;
