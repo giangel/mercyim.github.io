@@ -25,9 +25,9 @@ h1 {
 }
 
 @media (max-width: 767px) {
-   .content{
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    .content{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
    }
 }
 
