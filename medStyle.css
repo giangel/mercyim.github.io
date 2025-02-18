@@ -26,11 +26,11 @@ h1 {
 
 @media (max-width: 767px) {
     .content{
-        padding-left: 5px !important;
-        padding-right: 5px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
    }
    .container2 {
-    padding: 20px;
+    padding: 5px !important;
 }
 }
 
