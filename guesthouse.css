@@ -15,12 +15,10 @@ body {
 /* Header styles */
 header {
     background-image: url('images/Executive\ Single.JPG');
-    /* Make sure this path matches your image location */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 350px;
-    /* Adjust based on your design preference */
     color: rgb(250, 0, 0);
     display: flex;
     justify-content: center;
@@ -305,22 +303,16 @@ header {
     }
 }
 
-/* Responsive Design for Accommodations */
-@media (max-width: 768px) {
-    .accommodation-item {
-        width: 100%; /* Small screens: 1 item per row */
-    }
-}
-
+/* Responsive Design for Accommodations Section */
 @media (min-width: 769px) and (max-width: 1000px) {
     .accommodation-item {
         width: 45%; /* Medium screens: 2 items per row */
     }
 }
 
-@media (min-width: 1001px) {
+@media (max-width: 768px) {
     .accommodation-item {
-        width: 30%; /* Large screens: 3 items per row */
+        width: 100%; /* Small screens: 1 item per row */
     }
 }
 
