@@ -122,7 +122,7 @@ header {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
-    width: 30%;
+    width: 30%; /* Default for large screens: 3 items per row */
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -305,6 +305,25 @@ header {
     }
 }
 
+/* Responsive Design for Accommodations */
+@media (max-width: 768px) {
+    .accommodation-item {
+        width: 100%; /* Small screens: 1 item per row */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+    .accommodation-item {
+        width: 45%; /* Medium screens: 2 items per row */
+    }
+}
+
+@media (min-width: 1001px) {
+    .accommodation-item {
+        width: 30%; /* Large screens: 3 items per row */
+    }
+}
+
 /* General Responsive Design */
 @media (max-width: 768px) {
     .headGuest h1 {
@@ -328,10 +347,6 @@ header {
     .image-content {
         max-width: 100%;
         margin-bottom: 20px;
-    }
-
-    .accommodation-item {
-        width: 100%;
     }
 
     .family-suite-container {
@@ -358,12 +373,6 @@ header {
 
     .showcase-item {
         width: 100%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .accommodation-item {
-        width: 45%;
     }
 }
 
