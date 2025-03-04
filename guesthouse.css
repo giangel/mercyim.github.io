@@ -12,15 +12,6 @@ body {
     color: #333;
 }
 
-/* Footer styles */
-;
-
-footer {
-    background-color: #222;
-    font-size: 0.9rem;
-
-}
-
 /* Header styles */
 header {
     background-image: url('images/Executive\ Single.JPG');
@@ -36,7 +27,6 @@ header {
     align-items: center;
     position: relative;
     text-align: center;
-   
 }
 
 .headGuest h3 {
@@ -145,6 +135,7 @@ header {
 
 .accommodation-info {
     padding: 20px;
+    text-align: center; /* Center align the button */
 }
 
 .accommodation-info p:first-child {
@@ -181,6 +172,7 @@ header {
 .left-section {
     flex: 1;
     padding-right: 40px;
+    text-align: center; /* For the Family Suite section */
 }
 
 .left-section h1 {
@@ -225,7 +217,95 @@ header {
     margin: 0;
 }
 
-/* Responsive Design */
+.property-showcase {
+    background-color: #f5f5dc;
+    padding: 40px;
+    text-align: center;
+}
+
+.showcase-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.showcase-item {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.showcase-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Promos and Offers Section */
+.promos-offers {
+    padding: 40px;
+    text-align: center;
+    background-color: #f8f8f2;
+}
+
+.promos-offers h1 {
+    font-size: 2.5em;
+    color: #5a3c1a;
+    margin-bottom: 20px;
+}
+
+.promo-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.promo-item {
+    width: 30%; /* Default for large screens: 3 items per row */
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.promo-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.promo-item h2 {
+    color: #5a3c1a;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.promo-item p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Promos and Offers */
+@media (max-width: 768px) {
+    .promo-item {
+        width: 100%; /* Small screens: 1 item per row */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+    .promo-item {
+        width: 45%; /* Medium screens: 2 items per row */
+    }
+}
+
+@media (min-width: 1001px) {
+    .promo-item {
+        width: 30%; /* Large screens: 3 items per row */
+    }
+}
+
+/* General Responsive Design */
 @media (max-width: 768px) {
     .headGuest h1 {
         font-size: 2em;
@@ -275,6 +355,10 @@ header {
     .left-section p {
         font-size: 1em;
     }
+
+    .showcase-item {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -282,94 +366,6 @@ header {
         width: 45%;
     }
 }
-
-.property-showcase {
-    background-color: #f5f5dc;
-    padding: 40px;
-    text-align: center;
-}
-
-.showcase-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.showcase-item {
-    width: 45%;
-    margin-bottom: 20px;
-}
-
-.showcase-item img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.promos-offers {
-    padding: 40px;
-    text-align: center;
-    background-color: #f8f8f2;
-}
-
-.promos-offers h1 {
-    font-size: 2.5em;
-    color: #5a3c1a;
-    margin-bottom: 20px;
-}
-
-.promo-grid {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.promo-item {
-    width: 30%;
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 8px;
-}
-
-.promo-item img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.promo-item h2 {
-    color: #5a3c1a;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.promo-item p {
-    font-size: 1em;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .showcase-item {
-        width: 100%;
-    }
-
-    .promo-item {
-        width: 100%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .promo-item {
-        width: 45%;
-    }
-}
-
-
-
 
 .contact-section {
     padding: 50px 0;
@@ -387,7 +383,6 @@ header {
     background-color: #45a049;
     border-color: #45a049;
 }
-
 
 .book-button {
     background-color: #45a049;
@@ -408,15 +403,6 @@ header {
     color: #45a049;
 }
 
-.accommodation-info {
-    padding: 20px;
-    text-align: center;  /* Center align the button */
-}
-
-.left-section {
-    text-align: center; /* For the Family Suite section */
-}
-
 footer {
     background-color: #222;
     font-size: 0.9rem;
@@ -425,6 +411,7 @@ footer {
     width: 100%;
     margin-bottom: 0; /* Pushes footer to the bottom of the page content */
 }
+
 .logo-sized {
     width: 100px;
     height: 70px;
@@ -433,7 +420,7 @@ footer {
 /* For screens smaller than lg, ensure footer behaves naturally */
 @media (max-width: 991.98px) {
     footer.fixed-lg-bottom {
-      position: static;
+        position: static;
     }
 }
 
@@ -444,13 +431,11 @@ footer {
         bottom: 0;
         left: 0;
         right: 0;
-        
     }
     
     /* Ensure body does not scroll under the fixed footer */
     body {
         padding-bottom: 60px; /* Adjust based on your footer height */
         margin-bottom: 0; /* Remove any default margin */
-        
     }
 }
